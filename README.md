@@ -1,9 +1,8 @@
-quora-extension
+Google Chrome Extension for Quora
 ===============
 
-Google Chrome Extension for Quora
-
-This extension provides some simple utilities for using Quora.com
+This extension provides some simple utilities for using [Quora](https://www.quora.com)
 
 Currently supports:
-    - Hiding Top Content sections
+
+- Hiding Top Content sections
