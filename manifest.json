@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Quora Extension by 2NickPick",
+    "description": "Utilities for using Quora.com",
+    "version": "0.1",
+
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://*.quora.com/*"],
+            "js": ["lib/jquery/1.7.2/jquery.min.js", "main.js"],
+            "runat": "document_start"
+        }
+    ]
+}
