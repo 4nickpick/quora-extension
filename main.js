@@ -38,7 +38,7 @@ var QuoraExtension =
     /* Hide Top Content sections */
     hideTopContent: function()
     {
-        var $topContent = jQuery("span:contains('Top content on Quora')").closest('.pagedlist_item');
+        var $topContent = jQuery("div:contains('Top Content on Quora')").closest('.pagedlist_item');
         $topContent.hide();
     }
 };
