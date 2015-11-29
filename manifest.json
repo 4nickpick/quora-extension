@@ -1,13 +1,13 @@
 {
     "manifest_version": 2,
 
-    "name": "Quora Extension by 2NickPick (forked by ShifarShifz)",
+    "name": "Quora Extension",
     "description": "Utilities for using Quora.com",
     "version": "0.1",
 
     "permissions": [
         "activeTab"
-    ],
+    ],	
     "content_scripts": [
         {
             "matches": ["https://*.quora.com/*"],
