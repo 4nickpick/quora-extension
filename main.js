@@ -1,15 +1,20 @@
 
-//Hide @first load
-$("div.EventHeader:contains('Popular on Quora')").closest('.pagedlist_item').hide();
+//Used to hide top content on quora
+function hidePopularContent(){
+	$("div.EventHeader:contains('Popular on Quora')").closest('.pagedlist_item').hide();
+}
+
+//Hide content at startup
+hidePopularContent();
 
 $(document).ready(function(){
 	
-	//Hide @page finished loading
-	$("div.EventHeader:contains('Popular on Quora')").closest('.pagedlist_item').hide();
+	//Hide content on first page load.
+	hidePopularContent();
 	
-	//Hide @oneach load
 	$("#feed_visibility_wrapper").bind("DOMSubtreeModified", function() {
-		$("div.EventHeader:contains('Popular on Quora')").closest('.pagedlist_item').hide();
+		//Hide content on each update
+		hidePopularContent();
 	});
 
 });
